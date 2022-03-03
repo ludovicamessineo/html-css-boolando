@@ -25,19 +25,34 @@ html {
 .product {
     display: inline-block;
     width: calc((100%/3) - 3px);
-    position: relative;
 }
 
 .product img {
     width: 100%;
 }
 
+/* TESTO POSITION */
+.container-2 {
+    position: relative;
+}
+
 .img-tag {
     position: absolute;
     left: 0;
-    bottom: 50px;
+    bottom: 5%;
 }
 
+.heart {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    background-color: white;
+    color: black;
+    padding: 0.8em;
+    font-size: 15px;
+}
+
+/* TESTO FISSO */
 .lower-price {
     color: red;   
 }
@@ -58,4 +73,17 @@ html {
     color: white;
     font-size: 10px;
     padding: 2px;
+}
+
+/* HOVER */
+.second-img {
+    display: none;
+}
+
+.container-2:hover .second-img{
+    display: inline-block;
+}
+
+.container-2:hover .first-img {
+    display: none;
 }
